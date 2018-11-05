@@ -14,7 +14,8 @@ def cache_to_db(data):
 def check_link_in_cache(link):
 	query = Query()
 	cached_link =  db.search(query.long_link == link)
-	return cached_link[0]['short_link']
+	if cached_link:
+		return cached_link[0].get('short_link')
 
 
 def check_clicks(link, token):
