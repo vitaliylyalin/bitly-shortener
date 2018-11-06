@@ -19,7 +19,7 @@
 ### Как установить
 Для начала нужно получить личный токен **Bitly**, для этого необходимо [зарегистрироваться](https://bitly.com/a/sign_up?utm_content=site-free-button&utm_source=organic&utm_medium=website&utm_campaign=null&utm_cta=site-free-button).
 Далее в настройках аккаунта найти **Generic Access Token** и сгенерировать токен.
-Токен необходимо сохранить в файл с именем .env в корне проекта:
+Токен необходимо сохранить в файл с именем ```.env``` в корне проекта:
 ```
 BITLY_TOKEN=<ваш токен>
 ```
