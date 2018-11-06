@@ -26,7 +26,7 @@ def check_clicks(link, token):
 	link_clicks = response_json.get('link_clicks')
 	if link_clicks:
 		clicks = link_clicks[0].get('clicks')
-		return clicks
+		return f'Total clicks for this link: {clicks}'
 	else:
 		return 'There is no clicks for this link'
 
